@@ -1,10 +1,54 @@
-/*old*/
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px; } 
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Extra Light'), local('Inter-Extra-Light'),
+		url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
+		url('../fonts/Inter-ExtraLight.woff') format('woff'),
+		url('../fonts/Inter-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
 }
-/*end old*/
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Regular'), local('Inter-Regular'),
+		url('../fonts/Inter-Regular.woff2') format('woff2'),
+		url('../fonts/Inter-Regular.woff') format('woff'),
+		url('../fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Medium'), local('Inter-Medium'),
+		url('../fonts/Inter-Medium.woff2') format('woff2'),
+		url('../fonts/Inter-Medium.woff') format('woff'),
+		url('../fonts/Inter-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Semi Bold'), local('Inter-Semi-Bold'),
+		url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+		url('../fonts/Inter-SemiBold.woff') format('woff'),
+		url('../fonts/Inter-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter Bold'), local('Inter-Bold'),
+		url('../fonts/Inter-Bold.woff2') format('woff2'),
+		url('../fonts/Inter-Bold.woff') format('woff'),
+		url('../fonts/Inter-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
 
+@media (min-width: 1200px) {
+	.page-documentation .container {
+		width: 1200px;
+	}
+}
 
 .page-documentation {
 	padding-top: 30px;
@@ -64,19 +108,19 @@
 	max-height: 100%;
 }
 .page-documentation .row {
-	    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-.page-documentation .row > div {
+.page-documentation .row>div {
 	float: none;
 }
-.row.row_manual > div {
+.row.row_manual>div {
 	border-right: 1px solid rgba(124, 124, 124, 1);
 }
-.row.row_manual > div:last-child {
+.row.row_manual>div:last-child {
 	border: none;
 }
 .divider-main {
@@ -89,7 +133,7 @@
 	margin-bottom: 50px;
 }
 .grid-cards {
-	gap: 47px 70px; 
+	gap: 47px 70px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -135,69 +179,69 @@
 	margin-bottom: 65px;
 }
 @media only screen and (max-width : 1200px) {
-.item-manual__image {
-	width: 90px;
-	height: 90px;
-	padding: 5px;
-}
-.logo-manual {
-    height: 33px;
-    margin-bottom: 37px;
-}
-.item-manual {
-    font-size: 11px;
-}
-.grid-cards {
-    gap: 35px 32px;
-}
-.title-section {
-    font-size: 22px;
-    margin-bottom: 60px;
-}
+	.item-manual__image {
+		width: 90px;
+		height: 90px;
+		padding: 5px;
+	}
+	.logo-manual {
+		height: 33px;
+		margin-bottom: 37px;
+	}
+	.item-manual {
+		font-size: 11px;
+	}
+	.grid-cards {
+		gap: 35px 32px;
+	}
+	.title-section {
+		font-size: 22px;
+		margin-bottom: 60px;
+	}
 }
 @media only screen and (max-width : 992px) {
-.row.row_manual > div:nth-child(even) {
-	border: none;
-}
-.grid-cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.section-catalog .title-section {
-	margin-bottom: 40px;
-}
-.divider-main {
-	width: 500px;
-}
+	.row.row_manual>div:nth-child(even) {
+		border: none;
+	}
+	.grid-cards {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.section-catalog .title-section {
+		margin-bottom: 40px;
+	}
+	.divider-main {
+		width: 500px;
+	}
 }
 @media only screen and (max-width : 768px) {
-    .title-section {
-        font-size: 22px;
-        margin-bottom: 30px;
-        line-height: 1.6;
-    }
-.item-manual {
-	font-size: 13px;
-	margin-bottom: 15px;
-	display: block;
-	text-align: center;
-}
-.item-manual__image {
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-.logo-manual {
-	margin-bottom: 30px;
-	margin-top: 15px;
-}
-.divider-main {
-    margin-top: 50px;
-    margin-bottom: 32px;
-}
-    .section-catalog .title-section {
-        margin-bottom: 28px;
-    }
-	    .grid-cards {
-			        gap: 23px 10px;
-        grid-template-columns: 1fr 1fr;
-    }
+	.title-section {
+		font-size: 22px;
+		margin-bottom: 30px;
+		line-height: 1.6;
+	}
+	.item-manual {
+		font-size: 13px;
+		margin-bottom: 15px;
+		display: block;
+		text-align: center;
+	}
+	.item-manual__image {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.logo-manual {
+		margin-bottom: 30px;
+		margin-top: 15px;
+	}
+	.divider-main {
+		margin-top: 50px;
+		margin-bottom: 32px;
+	}
+	.section-catalog .title-section {
+		margin-bottom: 28px;
+	}
+	.grid-cards {
+		gap: 23px 10px;
+		grid-template-columns: 1fr 1fr;
+	}
 }
