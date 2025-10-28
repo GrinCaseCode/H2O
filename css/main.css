@@ -245,3 +245,147 @@
 		grid-template-columns: 1fr 1fr;
 	}
 }
+
+.page-inner {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+.page-inner .title-section {
+	font-size: 28px;
+	margin-bottom: 0;
+	color: #143546;
+}
+.page-inner__head {
+	padding: 0 40px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.link-back {
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 24px;
+	top: 0;
+	left: 0;
+	background-image: url(../img/ic_back.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	z-index: 2;
+}
+.logo-page-manual img {
+	max-width: 310px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+}
+.subtitle-section {
+	font-size: 20px;
+	margin: 40px 0;
+	gap: 30px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #143546;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.subtitle-section::after {
+	position: relative;
+	display: block;
+	content: " ";
+	flex: 1;
+	background: rgba(20, 53, 70, 0.3);
+	height: 1px;
+}
+.unit-manual {
+	display: block;
+}
+.unit-manual__image {
+	height: 410px;
+	margin-bottom: 23px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.unit-manual__image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.unit-manual__title {
+	font-size: 20px;
+	gap: 14px;
+	line-height: 140%;
+	font-weight: 400;
+	color: #143546;
+	display: flex;
+	font-family: Helvetica, sans-serif;
+	align-items: flex-start;
+}
+.unit-manual__title::before {
+	position: relative;
+	display: block;
+	content: " ";
+	width: 24px;
+	height: 24px;
+	flex: none;
+	background-image: url(../img/ic_download.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.row.row_units>div {
+	margin-bottom: 39px;
+}
+.row.row_units {
+	margin-bottom: -39px;
+}
+@media only screen and (max-width : 1200px) {
+	.page-inner .title-section {
+		font-size: 24px;
+	}
+	.subtitle-section {
+		font-size: 18px;
+		margin: 32px 0;
+		gap: 25px;
+	}
+	.unit-manual__title {
+		font-size: 17px;
+		gap: 12px;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.page-inner .title-section {
+		font-size: 22px;
+	}
+	.logo-page-manual img {
+		max-width: 255px;
+	}
+	.subtitle-section {
+		font-size: 15px;
+		margin: 25px 0;
+		gap: 15px;
+	}
+	.unit-manual__image {
+		height: 260px;
+		margin-bottom: 15px;
+	}
+	.unit-manual__title {
+		font-size: 14px;
+		gap: 10px;
+	}
+	.unit-manual__title::before {
+		width: 18px;
+		height: 18px;
+	}
+	.row.row_units>div {
+		margin-bottom: 25px;
+	}
+	.row.row_units {
+		margin-bottom: -25px;
+	}
+	.page-inner {
+		padding-bottom: 60px;
+	}
+}
